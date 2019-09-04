@@ -2,34 +2,41 @@ package com.accenture.RentaCar2.app.service;
 
 import java.util.List;
 
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.accenture.RentaCar2.app.dao.IVehiculodDao;
 import com.accenture.RentaCar2.app.entity.Vehiculo;
 
-class VehiculoServiceImpl implements IVehiculoSevice {
+class VehiculoServiceImpl implements IVehiculoService {
 
-	//comentario
+	@Autowired
+	private IVehiculodDao vehiculoDao;
+	
 	
 	@Override
 	public Vehiculo guardar(Vehiculo vehiculo) {
 		// TODO Auto-generated method stub
-		return null;
+		return vehiculoDao.save(vehiculo);
 	}
 
 	@Override
 	public void borrar(Long id) {
 		// TODO Auto-generated method stub
+		vehiculoDao.deleteById(id);
 
 	}
 
 	@Override
 	public Vehiculo buscarVeiculoPorId(Long id) {
 		// TODO Auto-generated method stub
-		return null;
+		return vehiculoDao.findById(id).orElse(null);
 	}
 
 	@Override
 	public List<Vehiculo> ListarTodos() {
 		// TODO Auto-generated method stub
-		return null;
+		return (List<Vehiculo>) vehiculoDao.findAll();
 	}
 
 }

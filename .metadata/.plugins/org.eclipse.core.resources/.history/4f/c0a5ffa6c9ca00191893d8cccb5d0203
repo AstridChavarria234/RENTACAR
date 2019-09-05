@@ -1,0 +1,5 @@
+package com.accenture.RentaCar2.app.entity;
+
+public class Vehiculo {
+
+}

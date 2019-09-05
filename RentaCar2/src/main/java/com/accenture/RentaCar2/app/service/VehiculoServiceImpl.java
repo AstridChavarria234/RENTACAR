@@ -4,10 +4,12 @@ import java.util.List;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.accenture.RentaCar2.app.dao.IVehiculodDao;
 import com.accenture.RentaCar2.app.entity.Vehiculo;
 
+@Service
 class VehiculoServiceImpl implements IVehiculoService {
 
 	@Autowired

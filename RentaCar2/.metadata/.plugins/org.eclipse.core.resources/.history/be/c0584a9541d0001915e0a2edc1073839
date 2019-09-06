@@ -1,0 +1,5 @@
+package com.accenture.RentaCar2.app.service;
+
+interface IclienteService {
+
+}

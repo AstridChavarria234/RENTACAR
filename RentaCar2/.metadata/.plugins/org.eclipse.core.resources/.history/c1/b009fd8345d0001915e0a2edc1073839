@@ -1,0 +1,33 @@
+package com.accenture.RentaCar2.app.service;
+
+import java.util.List;
+
+import com.accenture.RentaCar2.app.entity.Cliente;
+
+class ClienteServiceImpl implements IClienteService {
+
+	@Override
+	public Cliente guardar(Cliente cliente) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void borrar(Long id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Cliente buscarClientePorId(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Cliente> ListarTodos() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

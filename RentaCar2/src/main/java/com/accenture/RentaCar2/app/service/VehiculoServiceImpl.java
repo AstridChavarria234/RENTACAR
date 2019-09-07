@@ -26,7 +26,7 @@ class VehiculoServiceImpl implements IVehiculoService {
 	public void borrar(Long id) {
 		// TODO Auto-generated method stub
 		vehiculoDao.deleteById(id);
-
+		// TODO Auto-generated method stub
 	}
 
 	@Override
